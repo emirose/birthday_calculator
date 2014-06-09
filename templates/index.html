@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="{{ static_url("styles.css") }}" type="text/css"/>
+    <title> Birthday Calculator</title>
+  <body>
+    <h1> Birthday Calculator </h1>
+    <form action='/calculate' method='post'>
+      <label for='birthdate'> Please enter your birthdate: </label>
+      <input id='birthdate' type='text' name='birthdate'
+      placeholder='mm/dd/yyyy'>
+      <button type='submit'> Submit </button>
+    </form>
+    {% if results %}
+    <div id="results">
+     Days until next birthday: {{ results['days_until_next_birthday'] }}
+    </div>
+    {% end %}
+  </body>
+</html>

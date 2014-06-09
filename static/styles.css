@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  padding: 50px;
+  background-color: azure;
+}
+
+#results {
+  font-weight: bold;
+  padding-top: 20px;
+}
