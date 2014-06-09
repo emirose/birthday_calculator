@@ -9,6 +9,8 @@ def calculate(birthdate):
     next_birthday = calculate_next_birthday(birthdate)
     days_until_next_birthday = (next_birthday - today).days
     results['days_until_next_birthday'] = days_until_next_birthday
+    results['next_birthday_day_of_week'] = day_of_week(next_birthday)
+    results['years_old'] = calculate_age(birthdate)
     return results
 
 def calculate_next_birthday(birthdate):
@@ -21,3 +23,10 @@ def calculate_next_birthday(birthdate):
     return next_birthday
 
 
+def calculate_age(birthdate):
+    #TODO 
+    return "Unknown"
+
+def day_of_week(next_birthdate):
+    #TODO 
+    return "Unknown"

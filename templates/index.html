@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel='stylesheet' href="{{ static_url("styles.css") }}" type="text/css"/>
     <title> Birthday Calculator</title>
+  </head>
   <body>
     <h1> Birthday Calculator </h1>
     <form action='/calculate' method='post'>
@@ -14,7 +15,15 @@
     </form>
     {% if results %}
     <div id="results">
-     Days until next birthday: {{ results['days_until_next_birthday'] }}
+      <div>
+        Days until next birthday: {{ results['days_until_next_birthday'] }}
+      </div>
+      <div>
+        Your next birthday is on a: {{ results['next_birthday_day_of_week'] }}
+      </div>
+      <div>
+        You are {{ results['years_old'] }} years old
+      </div>
     </div>
     {% end %}
   </body>
