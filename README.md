@@ -1,4 +1,4 @@
 birthday_calculator
 ===================
 
-Project for Mr. Hymen's intro CS class
+Project for Mr. Hyman's intro CS class
